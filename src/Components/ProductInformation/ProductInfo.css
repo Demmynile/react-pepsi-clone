@@ -1,0 +1,55 @@
+.productInfoContainer{
+	background-color: black;
+	width: 100%;
+	height: 70vh;
+	display: grid;
+	grid-template-columns: 2.5fr 1.5fr;
+
+}
+
+
+.productInfoMainOne{
+  background-color: black;
+  display: flex;
+  flex-direction: column ;
+  gap : 2rem 0;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.productInfoMainTwo{
+   background-color: black;
+   overflow-y : hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.productInfoZeroSugar {
+	color : white;
+	font-size : 9rem;
+	font-family: 'Exo 2', sans-serif;
+}
+.productInfoZeroCompromise{
+	color : white;
+	font-size: 5rem;
+	font-family: 'Exo 2', sans-serif;
+}
+.productInfoItemsTwo{
+
+	background-color: white;
+     
+	
+}
+.pepsiZeroSugar{
+	margin-top: 4rem;
+	width : 300px;
+	height: 500px;
+	
+	
+}
+.productInfoImage1{
+	width : 800px;
+}
+

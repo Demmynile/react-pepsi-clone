@@ -1,0 +1,573 @@
+.pepNavContainer{
+	position : fixed;
+    display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	z-index: 1;
+	background-color: #005CB4;
+	height: 10%;
+	padding :0.8rem;
+	
+}
+
+.pepLogo{
+
+	display: flex;
+	flex : 3;
+    padding : 1.2rem;
+
+
+}
+.pepLinks{
+	
+	margin-left: -1.5rem;
+	display : flex;
+	padding : 0 1rem
+}
+.pepLinks-list{
+	margin-left : 3rem;
+	color : white;
+	font-size: 0.80rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+}
+.pepLinks-list1{
+	margin-left:1rem;
+	color : white;
+	font-size: 0.80rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+}
+.pepLinks-list:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.pepLinks-items{
+  display: flex;
+  align-self: center;
+}
+.pepView{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 2rem;
+
+
+}
+.pepView:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+.log {
+	color : white;
+	width : 5%;
+	height: 0.5%;
+    transition: 0.18s;
+	margin-left: 2rem;
+	cursor: pointer;
+}
+
+
+.log:hover{
+	transform : rotate(360deg)
+}
+.pepButtonNav{
+	
+	display: flex;
+    flex : 1;
+	justify-content: flex-end;
+	margin-right: 4rem;
+}
+
+.pepButton{
+	padding : 0.5rem 2.5rem;
+	background-color: transparent;
+	border: 0.15rem solid white;
+	font-family: 'Exo 2', sans-serif;;
+	color: white;
+	border-radius: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 1s 0.2s ease-in-out;
+}
+
+
+.pepButton:hover{ 
+	background-color: white;
+	color:#005CB4;
+}
+.pepButton:hover .buyProducts {
+	display: inline-block;
+	animation-name : text-transform;
+	animation-duration: 1.5s;
+	animation-timing-function : ease-in
+	/* animation-iteration-count: 3;	 */
+	/* animation-direction : reverse; */
+	
+}
+
+@keyframes text-transform{
+	0% {transform : translateY(-100px) }
+	25% {transform : translateY(0) }
+	75% {transform : translateY(0) }
+	100% {transform : translateY(-100px)}
+}
+.hamburger{
+	display : none;
+}
+.pepNavAvaProducts{
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+}
+
+.pepDownArrow{
+	color : white;
+	font-size: 1.2rem;
+}
+.pepUpArrow{
+	color : white;
+	font-size: 1.2rem;
+}
+/* conditional styles after viewing available products */
+.pepNavContainerClicked{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	background-color: white;
+	height: 10%;
+	padding :1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.pepLinks-list1Clicked{
+	margin-left:1rem;
+	color : #005CB4;
+	font-size: 0.80rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+}
+.pepDownArrowClicked{
+	color : #005CB4;
+}
+.pepUpArrowClicked{
+	color : #005CB4;
+}
+.pepLinks-listClicked{
+	margin-left : 3rem;
+	color : gray;
+	font-size: 0.80rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 800;
+}
+.pepButtonClicked{
+	padding : 0.5rem 2.5rem;
+	background-color: transparent;
+	border: 0.15rem solid #005CB4 ;
+	font-family: 'Exo 2', sans-serif;;
+	color: #005CB4;
+	border-radius: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	
+}
+.pepButtonClicked:hover{
+	background-color: #005CB4 ;
+	color:white;
+	
+}
+/* Animation on the page */
+
+
+.pepButtonClicked:hover .buyProducts{
+	display: inline-block;
+	animation-name : white-text-animation;
+	animation-duration : 1.2s;
+	
+}
+.pepOnHoverBackground{
+	background-color: white;
+	width:100vw;
+	padding: 3rem 0;
+	height:100%;
+	animation: onLoadAnimation 2s;
+	margin-top : 2rem;
+
+}
+
+.pepOnHoverBackgroundMobile{
+	background-color: white;
+	width:100vw;
+	height:100%;
+	animation: onLoadAnimation 2s;
+	margin-top : 4rem;
+
+}
+@keyframes onLoadAnimation {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+		
+	}
+	to {
+		opacity: 1;
+		transform : rotateX(0)
+	}
+}
+
+
+
+.product-grid{
+	display: grid;
+	grid-template-columns: repeat(4 , 1fr);
+	/* margin-top : 3rem; */
+	
+
+	
+}
+.mobile-grid{
+	display: grid;
+	grid-template-columns: repeat(1 , 1fr);
+	margin-top : 2rem	
+}
+.product{
+	display: flex;
+    flex-direction: column;
+	padding: 3.5rem;
+	justify-content: center;
+	align-items: center;
+	border : 1px solid #D3D3D3;
+	overflow-y: hidden;
+	margin-top: 0rem;
+
+}
+
+
+.product-mobile{
+	display: flex;
+    flex-direction: column;
+	padding: 2rem;
+	justify-content: center;
+	align-items: center;
+	border : 1px solid #D3D3D3;
+	overflow-y: hidden;
+	margin-top: 0rem;
+
+}
+
+
+.product:hover{
+  background-color: whitesmoke;
+  color : white;
+}
+
+.product:hover > .product-image{
+	animation: onHoverAffectProducts 0.3s; 
+}
+
+/* Animation on the image */
+@keyframes onHoverAffectProducts {
+	from {
+       transform : scale(1)
+	}
+	to {
+         transform : scale(1.1)
+	}
+}
+
+
+
+.product-image{
+	object-fit: contain;
+	width : 400px;
+	height : 200px;
+	padding : 2rem;
+	animation : onLoadImage 2.5s;
+	animation-fill-mode: forwards;
+}
+
+/* Animation on the image */
+
+@keyframes onLoadImage {
+	from {
+		transform: translateY(-3) 
+	}
+	to {
+		transform: translateY(-5px) 
+	}
+}
+.product-name{
+	
+	/* text-align: center; */
+	margin-top: 1rem;
+	color : gray;
+	font-size: 0.80rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 800;
+	
+}
+
+.arrow-right{
+	color : rgb(219, 212, 212);
+	margin-top : 10px;
+	font-size: 30px;
+}
+
+.arrow-right:hover{
+  color : #005CB4;
+  cursor: pointer;
+  animation : onHoverArrow 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes onHoverArrow{
+	from {
+       transform : translateX(0);
+	   opacity: 0.5;
+	   
+	}
+	to {
+       transform : translateX(10px);
+	   opacity : 1
+	}
+}
+
+
+
+
+
+
+
+/*  Mobile Style*/
+.pepMobileContent{
+    
+	background-color: white;
+	width : 100%;
+	height : 100%;
+
+
+	
+}
+.pepMobileContainer{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #005CB4;
+	padding : 1.5rem 0;
+	width: 100%;
+	height : 10%;
+	position : fixed;
+	z-index: 1;
+	overflow-y: hidden;
+	
+	
+
+}
+
+.logoPart{
+	margin-left: 0.5rem;
+	padding : 0.9rem 1rem;
+}
+.pepMobileLogo{
+	width : 35px;
+	height : 45px;
+	transition: 0.2s ;
+}
+.pepMobileLogo:hover{
+	transform : rotateZ(360deg);
+	cursor : pointer
+}
+.hamburgerPart{
+	margin-right: 1.3rem;
+}
+.MobileViewProductPart{
+	display: flex;
+	align-items: center;
+    margin-left: -3rem;
+	
+}
+.MobileViewProductPart:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.pepMobileList{
+	color : white;
+	font-size: 1.0rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	
+}
+
+/* conditional rendering of the animated pages */
+.pepMobileContent{
+	background-color: white;
+	width : 100%;
+	height : 100%;
+}
+.pepMobileContainerClicked{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	border-bottom: 1px solid grey;
+	padding : 1.5rem 0;
+	width: 100%;
+	height : 10%;
+	position : fixed;
+	z-index: 50;
+	overflow-y: hidden;
+	/* border-bottom: 1px solid #D3D3D3; */
+
+}
+
+
+
+.pepMobileArrowUpClicked{
+  font-size : 30px;
+  color : black
+}
+.pepMobileArrowUp{
+	font-size : 30px;
+	color : white
+  }
+.pepMobileArrowDownClicked{
+	font-size : 30px;
+	color : black
+  }
+.pepMobileArrowDown{
+	font-size : 30px;
+	color : white
+  }
+
+  .mobileHamburgerClicked{
+	font-size: 30px;
+	color : gray
+	
+  }
+  .mobileHamburgerClicked :hover{
+	font-size: 30px;
+	color : gray;
+	cursor : pointer;
+	
+  }
+  .mobileHamburger{
+	font-size: 30px;
+	color : white;
+  }
+
+  .mobileHamburger :hover{
+	font-size: 30px;
+	color : white;
+	cursor : pointer;
+  }
+.logoPart{
+	margin-left: 1rem;
+}
+.pepMobileLogo{
+	width : 75px;
+	height : 60px;
+	transition: 0.2s ;
+}
+.pepMobileLogo:hover{
+	transform : rotateZ(360deg);
+	cursor : pointer
+}
+.hamburgerPart{
+	margin-right: 1.3rem;
+}
+.MobileViewProductPart{
+	display: flex;
+	align-items: center;
+	
+}
+.MobileViewProductPart:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.pepMobileListClicked{
+	color : black;
+	font-size: 1.0rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+}
+
+.mobileHamburgerPart{
+	width: 100%;
+	height: 100vh;
+	background-color: #005CB4;
+	padding : -5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+}
+.mobileHamburg{
+ display: flex;
+ flex-direction: column;
+ margin-left: 4.6rem;
+ margin-top: 5rem;
+ 
+
+}
+
+.hambg1{
+	color: white;
+	font-size: 1.8rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	
+}
+.hambg1:hover {
+	
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+
+.hambg {
+	color: white;
+	font-size: 1.8rem;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 600;
+	margin-top : 3rem;
+	/* animation-name: ham; */
+	
+
+}
+
+.hambg:hover {
+	
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+
+
+
+
+
+/* Animation for the links */
+@keyframes ham {
+ from {
+	transform: translateX(0);
+
+ }
+ to {
+	transform: translateX(5px);
+ }
+}
+

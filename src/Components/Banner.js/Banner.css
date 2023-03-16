@@ -1,0 +1,232 @@
+
+/* DesktopStyle */
+.pepDeskBannerContainer{
+  background: white;
+  width : 100%;
+  height : 50rem;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  margin-top: 4rem;
+}
+.pepDeskBannerContent{
+
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.pepDeskBannerCont{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4rem;
+  padding : 3rem
+}
+.pepDeskBannerWords{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  margin-top:2rem ;
+  
+  
+}
+.pepDeskBannerIntro{
+ font-size : 5rem;
+ font-family: 'Exo 2', sans-serif;
+ color : #005CB4;
+ 
+}
+.pepDeskBannerNitro{
+  font-size : 5rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+ .pepDeskBannerPepsi{
+  font-size : 5rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+ .pepDeskBannerSmooth{
+  font-size : 2rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+
+ .pepDeskBannerButton{
+  border : 1px solid #005CB4;
+  border-radius : 1rem;
+  background: transparent;
+  padding : 0.6rem 2rem;
+  color : #005CB4;
+  font-family: 'Exo 2', sans-serif;
+  animation-name: bannerAnimation;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+ }
+
+ .pepDeskBannerButton:hover{
+  border : 1px solid #005CB4;
+  border-radius : 1rem;
+  background: #005CB4 ;
+  padding : 0.6rem 2rem;
+  font-weight: 500;
+  color : white;
+  font-family: 'Exo 2', sans-serif;
+  animation-name: bannerAnimationHover;
+  animation-duration: 0.002s;
+  
+  
+ }
+
+ @keyframes bannerAnimation{
+  from {
+    transform : scale(1) ; opacity :  0 ; 
+ }
+  to{
+    transform : scale(1.1) ; opacity : 1
+  }
+}
+
+@keyframes bannerAnimationHover{
+  from {
+    transform : scale(1); 
+ }
+  to{
+    transform : scale(1.1)
+  }
+}
+
+.pepDeskBannerImage {
+  width : 450px;
+  height : 600px;
+  margin-top : 50px;
+
+}
+
+/* Mobile Style */
+
+.pepMobileDeskBannerContainer{
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+}
+.pepMobileDeskBannerContent{
+
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  padding : 4rem 0rem;
+  overflow-y: hidden;
+  margin-top: -6rem;
+
+
+  
+
+}
+.pepMobileDeskBannerCont{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+  padding : 8rem;
+  margin-top: 7rem;
+  
+  
+}
+.pepMobileDeskBannerWords{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 2rem;
+  width : 100%;
+  overflow-y: hidden;
+ 
+  
+  
+}
+.pepMobileDeskBannerIntro{
+ font-size : 2rem;
+ font-family: 'Exo 2', sans-serif;
+ color : #005CB4;
+ margin-top: -5rem;
+ 
+}
+.pepMobileDeskBannerNitro{
+  font-size : 2rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+ .pepMobileDeskBannerPepsi{
+  font-size : 2rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+ .pepMobileDeskBannerSmooth{
+  font-size : 2rem;
+  font-family: 'Exo 2', sans-serif;
+  color : #005CB4;
+  
+ }
+
+ .pepMobileDeskBannerButton{
+  border : 1px solid #005CB4;
+  border-radius : 1rem;
+  background: transparent;
+  padding : 0.6rem 2rem;
+  color : #005CB4;
+  font-family: 'Exo 2', sans-serif;
+  animation-name: bannerAnimation;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+ }
+
+ .pepMobileDeskBannerButton:hover{
+  border : 1px solid #005CB4;
+  border-radius : 1rem;
+  background: #005CB4 ;
+  padding : 0.6rem 2rem;
+  font-weight: 500;
+  color : white;
+  font-family: 'Exo 2', sans-serif;
+  animation-name: bannerAnimationHover;
+  animation-duration: 0.002s;
+  
+  
+ }
+
+ @keyframes bannerAnimation{
+  from {
+    transform : scale(1) ; opacity :  0 ; 
+ }
+  to{
+    transform : scale(1.1) ; opacity : 1
+  }
+}
+
+@keyframes bannerAnimationHover{
+  from {
+    transform : scale(1); 
+ }
+  to{
+    transform : scale(1.1)
+  }
+}
+
+.pepMobileDeskBannerImage {
+  width : 300px;
+  height : 400px;
+}
